@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>某管理系统</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/index.css">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<style>
+</style>
+
+</head>
+
+<body>
+<div class="header">
+  <div class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+                某管理系统
+        </a>
+        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="src-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!--存在下拉选项会出现滚动条现象，待解决-->
+      <div class="collapse navbar-collapse navbar-self">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">首页</a>
+          </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown"  href="#">功能<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">功能一</a></li>
+                  <li><a href="#">功能一</a></li>
+                  <li><a href="#">功能一</a></li>
+                </ul>
+            </li>
+            <li><a href="">帮助</a></li>
+          </ul>
+          <form action="" class="navbar-right navbar-form">
+            <input type="text" class="form-control" placeholder="用户名"/>
+            <input type="text" class="form-control" placeholder="密码" />
+            <button class="btn btn-default">登陆</button>
+          </form>
+      </div>
+    </div>   
+  </div>
+</div>
+<div class="main">
+  <div class="col-md-2 sidebar">
+    <button class="btn btn-primary sidebar-btn" type="button">
+      点击展开
+    </button>
+    <ul class="nav nav-sidebar">
+      <li class="list-group-item dropdown active"><a href="#">首页</a></li>
+      <li class="list-group-item"><a href="">信息建立</a></li>
+      <li class="list-group-item"><a href="">信息管理</a></li>
+      <li class="list-group-item"><a href="">信息查询</a></li>
+      <li class="list-group-item"><a href="">设置</a></li>
+      <li class="list-group-item"><a href="">帮助</a></li>
+    </ul>
+  </div>
+  <div class="col-md-10 main-content">
+    <h3 class="title">管理控制台</h3>
+    <div class="operation-btn-group">
+      <button type="button" class="btn btn-default">操作一</button>
+      <button type="button" class="btn btn-primary">操作二</button>
+      <button type="button" class="btn btn-success">操作三</button>
+      <button type="button" class="btn btn-info">操作四</button>
+      <button type="button" class="btn btn-warning">操作五</button>
+      <button type="button" class="btn btn-danger">操作六</button>
+    </div>
+    <div class="main-panel">
+      <div class="col-md-6 panel panel-primary">
+        <div class="panel-heading">最新提醒</div>
+        <div class="panel-body">
+          <p class="text-success">提示：您的订单(2014001)已经审批通过！</p>
+          <p class="text-danger">提示：您的订单(2014002)被打回！</p>
+          <p class="text-warning">提示：您的订单(2013001)客户付款延迟！</p>
+        </div>
+      </div>
+      <div class="col-md-6 panel panel-primary">
+        <div class="panel-heading">我的任务</div>
+        <div class="panel-body">
+          <ul class="panel-body-list">
+            <li class="panel-body-list-item"><a href="">订单审批</a><span class="label label-default">42</span></li>
+            <li class="panel-body-list-item"><a href="">收款审批</a><span class="label label-default">20</span></li>
+            <li class="panel-body-list-item"><a href="">付款确认</a><span class="label label-default">10</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main-panel">
+      <div class="col-md-6 panel panel-primary">
+        <div class="panel-heading">最新订单</div>
+        <div class="panel-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>
+                  #
+                </th>
+                <th>产品</th>
+                <th>数量</th>
+                <th>总金额</th>
+                <th>业务员</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <th>Apple Macbook air</th>
+                <th>10</th>
+                <th>80000</th>
+                <th>王小贱</th>
+              </tr>
+              <tr>
+                <th>2</th>
+                <th>Apple iPad air</th>
+                <th>20</th>
+                <th>65000</th>
+                <th>尹开花</th>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th>Apple Macbook pro</th>
+                <th>5</th>
+                <th>50000</th>
+                <th>刘老根</th>
+              </tr>
+            </tbody>
+          </table>
+          <a class="btn btn-primary" href="#">
+            查看详细》
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 panel panel-primary">
+        <div class="panel-heading">工程进度</div>
+        <div class="panel-body">
+          <div class="main-progress">
+            <span class="span span-primary">水井挖掘工程</span>
+            <div class="progress">
+              <div class="progress-bar" style="width:60%"></div>
+            </div>
+          </div>
+          <div class="main-progress">
+            <span class="span span-danger">基建工程</span>
+            <div class="progress">
+              <div class="progress-bar progress-bar-danger" style="width:80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
